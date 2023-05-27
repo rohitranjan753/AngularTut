@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HospitalManagementSystem';
-  someValue="";
+  
+  someValue:string="";
+  someValues:Array<string> = new Array<string>();
   CallSomeLogic(){
-    alert("Hello");
+    this.someValues.push(this.someValue);
+    this.someValue="";
   }
 }
