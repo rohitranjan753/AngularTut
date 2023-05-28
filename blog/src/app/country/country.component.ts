@@ -3,11 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-country',
   template: `
-    <p>
+    <h3 class="custom">
       country works!
-    </p>
+    </h3>
   `,
   styles: [
+    `.custom{
+      color:blue
+    }`
   ]
 })
 export class CountryComponent {
