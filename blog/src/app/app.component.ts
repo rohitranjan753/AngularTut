@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NgForm} from '@angular/forms'
 
 @Component({
   selector: 'app-root',
@@ -97,5 +98,18 @@ export class AppComponent {
 
 
   //lec 21
+  
+
+
+  //LEC 22
+  // userData:any={};
+  // getData(data:NgForm){
+  //   console.log(data);
+  //   this.userData=data;
+  // }
+
+
+
+  //Lec 23
   
 }
