@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+
+  // getName(name:number){
+  //   alert(name)
+  // }
+  // getName(name:any){
+  //   alert(name)
+  // }
+  getName(name:string | number){
+    alert(name)
+  }
 }

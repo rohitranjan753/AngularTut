@@ -3,20 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { StudentListComponent } from './student-list/student-list.component';
-import { CountryComponent } from './country/country.component';
+import {UserAuthModule} from './user-auth/user-auth.module'
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent,
-    StudentListComponent,
-    CountryComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
