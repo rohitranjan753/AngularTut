@@ -18,7 +18,12 @@ export class AppComponent {
   //   alert(name)
   // }
 
-  getData(val:string){
-    alert(val)
+  // getData(val:string){
+  //   alert(val)
+  // }
+  displayVal:string="";
+  getValue(val:string){
+    console.log(val);
+    this.displayVal=val;
   }
 }

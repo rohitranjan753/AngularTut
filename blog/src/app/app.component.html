@@ -1,9 +1,9 @@
-<h1>Hello Angular</h1>
+<!-- <h1>Hello Angular</h1>
 <button (click)="getData('button click event')">Click Mw</button>
 <!-- <button (click)="getName(900)">Click mE</button>
 <button (click)="getName('rohit')">Click mE Another</button> -->
 <!-- <app-login></app-login> -->
-<br>
+<!--<br>
 <br>
 <input type="text" #box1 placeholder="Keyup box" (keyup)="getData(box1.value)"/><br>
 <input type="text" #box2 placeholder="Keydown box" (keydown)="getData(box2.value)"/><br>
@@ -13,4 +13,22 @@
 
 <br>
 <h1 (mouseover)="getData('mouse over')">Code By me</h1>
-<h1 (mouseleave)="getData('mouse leave')">Rogit</h1>
+<h1 (mouseleave)="getData('mouse leave')">Rogit</h1> -->
+
+<input
+  type="text"
+  placeholder="Enter Name"
+  name="username"
+  #box
+  />
+  <!-- (keyup)="getValue(box.value)" -->
+
+<button (click)="getValue(box.value)">Click to display</button>
+<!-- <button (click)="getValue(box.name)">Click to display</button> -->
+<!-- <button (click)="getValue(box.placeholder)">Click to display</button> -->
+
+<p>
+    Box Value is: {{displayVal}}
+</p>
+
+<br>
