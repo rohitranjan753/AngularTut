@@ -129,15 +129,32 @@ export class AppComponent {
 
   //LEC 25
   //TO DO LIST
-  list:any[]=[];
-  addTask(item:string){
-    this.list.push({id:this.list.length,name:item});
-    console.log(item);
-  }
+  // list:any[]=[];
+  // addTask(item:string){
+  //   this.list.push({id:this.list.length,name:item});
+  //   console.log(item);
+  // }
 
-  removeTask(id:number){
-    this.list = this.list.filter(item=> item.id!==id);
-    console.warn(id);
-  }
+  // removeTask(id:number){
+  //   this.list = this.list.filter(item=> item.id!==id);
+  //   console.warn(id);
+  // }
+
+
+
+  // LEC 26
+  // data=10;
+  // updateData(){
+  //   this.data =  Math.floor(Math.random()*10);
+  // }
+
+
+  //LEC 27
+  userDetails=[
+    {name:'Anil', email:'anil@test.com'},
+    {name:'Bnil', email:'dnil@test.com'},
+    {name:'Vnil', email:'cnil@test.com'},
+    {name:'Mnil', email:'vnil@test.com'},
+  ]
 
 }

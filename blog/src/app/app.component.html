@@ -218,7 +218,7 @@
 
 
 <!-- LEC 25 -->
-<input type="text" placeholder="Enter New Task" #task/>
+<!-- <input type="text" placeholder="Enter New Task" #task/>
 <br>
 <br>
 <button (click)="addTask(task.value)">Add New Task</button>
@@ -226,4 +226,22 @@
 <br>
 <ul *ngFor="let item of list">
   <li>{{item.name}} <button (click)="removeTask(item.id)">Remove Task</button></li>
+</ul> -->
+
+
+
+
+<!-- LEC 26 -->
+<!-- <app-child [item]="data"></app-child>
+
+<button (click)="updateData()">Update Child Component</button> -->
+
+
+
+<!-- lec 27 -->
+
+<ul *ngFor="let user of userDetails">
+
+<app-user-details [item]='user' ></app-user-details>
+
 </ul>

@@ -10,7 +10,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule} from '@angular/material/button';
-import { ChildComponent } from './child/child.component'
+import { ChildComponent } from './child/child.component';
+import { UserDetailsComponent } from './user-details/user-details.component'
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ChildComponent } from './child/child.component'
     LoginComponent,
     HeaderComponent,
     ChildComponent,
+    UserDetailsComponent,
 
   ],
   imports: [
