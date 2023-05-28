@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, IterableDiffers } from '@angular/core';
 import {NgForm} from '@angular/forms'
 
 @Component({
@@ -129,6 +129,15 @@ export class AppComponent {
 
   //LEC 25
   //TO DO LIST
-  
+  list:any[]=[];
+  addTask(item:string){
+    this.list.push({id:this.list.length,name:item});
+    console.log(item);
+  }
+
+  removeTask(id:number){
+    this.list = this.list.filter(item=> item.id!==id);
+    console.warn(id);
+  }
 
 }

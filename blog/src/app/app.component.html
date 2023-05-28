@@ -206,7 +206,7 @@
 
 <!-- LEC 24 -->
 
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<!-- <mat-slide-toggle>Toggle me!</mat-slide-toggle>
 <div class="example-button-row">
   <button mat-flat-button>Basic</button>
   <button mat-flat-button color="primary">Primary</button>
@@ -214,4 +214,16 @@
   <button mat-flat-button color="warn">Warn</button>
   <button mat-flat-button disabled>Disabled</button>
   <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
-</div>
+</div> -->
+
+
+<!-- LEC 25 -->
+<input type="text" placeholder="Enter New Task" #task/>
+<br>
+<br>
+<button (click)="addTask(task.value)">Add New Task</button>
+<br>
+<br>
+<ul *ngFor="let item of list">
+  <li>{{item.name}} <button (click)="removeTask(item.id)">Remove Task</button></li>
+</ul>
