@@ -18,14 +18,13 @@
 <!-- -------------------------------------------------------------------- -->
 <!-- Lec 12 -->
 
-
 <!-- <input
   type="text"
   placeholder="Enter Name"
   name="username"
   #box
   /> -->
-  <!-- (keyup)="getValue(box.value)" -->
+<!-- (keyup)="getValue(box.value)" -->
 
 <!-- <button (click)="getValue(box.value)">Click to display</button> -->
 <!-- <button (click)="getValue(box.name)">Click to display</button> -->
@@ -49,10 +48,9 @@
 <p>Count: {{count}}</p>
 <button (click)="counter('add')">++</button> -->
 
-
 <!-- -------------------------------------------------- -->
 
-<!-- LEC 14 -->
+<!-- LEC 13  -->
 <!-- <style>
   .heading{
     color: green;
@@ -61,5 +59,77 @@
 <h1 class="heading">Hello World</h1>
 <app-login></app-login> -->
 
+<!-- LEC 14 -->
+<!-- Even after false it is still disabled in interpolation whereas its working fine in binding -->
+<!-- <input type="text" value={{name}} disabled="{{disable}}">
+<br>
+<input type="text" [value]="name" [disabled] = disable> -->
 
 <!-- LEC 15 -->
+
+<!-- <h1 *ngIf="show==='yes'; then ifBlock else elseBlock">Rohit</h1> 
+
+<ng-template #ifBlock>
+  <h1>If Condition</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h1>Else Block</h1>
+</ng-template> -->
+
+
+<!-- lec 16 -->
+
+<!-- <ng-template [ngIf]="color==='red'">
+  <h1 style="color: red;">Red Color</h1>
+</ng-template>
+
+<br>
+<ng-template [ngIf]="color==='green'">
+  <h1 style="color: green;">Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+  <h1 style="color: blue;">Green Color</h1>
+</ng-template> -->
+
+
+
+
+<!-- lec 17 -->
+<!-- <div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="color: red;">Red Color</h1>
+  <h1 *ngSwitchCase="'green'" style="color: green;">Green Color</h1>
+  <h1 *ngSwitchCase="'blue'" style="color:blue">Blue Color</h1>
+
+  <h1 *ngSwitchDefault="" style="color:yellow">Unknow Color</h1>
+</div> -->
+
+
+
+
+<!-- LEC 18 -->
+
+<!-- <h3 *ngFor="let data of users" style="color:red">Element is: {{data}}</h3>
+
+<h3 *ngFor="let data of details" style="color:green">Details is: {{data.name}} - {{data.email}} - {{data.phone}}</h3> -->
+
+
+
+<!-- LEC 19 -->
+<!-- <ul *ngFor="let item of users">
+  <li>{{item.name}}</li>
+  <li>{{item.email}}</li>
+  <li>{{item.phone}}</li>
+  <ul *ngFor="let account of item.accounts" style="color:red">
+    <li>{{account}}</li>
+  </ul>
+</ul> -->
+
+
+<!-- LEC 20 -->
+<!-- <h1 [style.color]="color" [style.backgroundColor]="bgColor">  hello woekd</h1>
+
+<button (click)="updateColor()"> Update Color</button> -->
+
+
+<!-- LEC 21 -->
