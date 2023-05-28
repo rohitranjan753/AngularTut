@@ -1,3 +1,16 @@
 <h1>Hello Angular</h1>
-<button (click)="getName(900)">Click mE</button>
-<app-login></app-login>
+<button (click)="getData('button click event')">Click Mw</button>
+<!-- <button (click)="getName(900)">Click mE</button>
+<button (click)="getName('rohit')">Click mE Another</button> -->
+<!-- <app-login></app-login> -->
+<br>
+<br>
+<input type="text" #box1 placeholder="Keyup box" (keyup)="getData(box1.value)"/><br>
+<input type="text" #box2 placeholder="Keydown box" (keydown)="getData(box2.value)"/><br>
+<input type="text" #box3 placeholder="Blur box" (blur)="getData(box3.value)"/>
+<br>
+<input type="text" #box4 placeholder="Input box" (input)="getData(box4.value)"/>
+
+<br>
+<h1 (mouseover)="getData('mouse over')">Code By me</h1>
+<h1 (mouseleave)="getData('mouse leave')">Rogit</h1>

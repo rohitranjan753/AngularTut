@@ -14,7 +14,11 @@ export class AppComponent {
   // getName(name:any){
   //   alert(name)
   // }
-  getName(name:string | number){
-    alert(name)
+  // getName(name:string | number){
+  //   alert(name)
+  // }
+
+  getData(val:string){
+    alert(val)
   }
 }
