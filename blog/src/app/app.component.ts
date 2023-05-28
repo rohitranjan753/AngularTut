@@ -111,5 +111,8 @@ export class AppComponent {
 
 
   //Lec 23
-  
+  display = true;
+  toggle(){
+    this.display=!this.display;
+  }
 }
