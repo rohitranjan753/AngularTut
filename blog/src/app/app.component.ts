@@ -111,8 +111,19 @@ export class AppComponent {
 
 
   //Lec 23
-  display = true;
-  toggle(){
-    this.display=!this.display;
-  }
+  // display = true;
+  // toggle(){
+  //   this.display=!this.display;
+  // }
+
+
+
+
+  // lec 24
+  //bOOTSTRAP
+
+
+  // lec 25
+  //Material Ui
+
 }
