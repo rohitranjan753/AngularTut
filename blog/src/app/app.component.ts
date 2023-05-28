@@ -21,9 +21,30 @@ export class AppComponent {
   // getData(val:string){
   //   alert(val)
   // }
-  displayVal:string="";
-  getValue(val:string){
-    console.log(val);
-    this.displayVal=val;
-  }
+
+  //Lec 12
+  // displayVal:string="";
+  // getValue(val:string){
+  //   console.log(val);
+  //   this.displayVal=val;
+  // }
+
+  // LEC 13
+  // count=0;
+  // counterAdd(){
+  //   this.count++;
+  // }
+  // counterSub(){
+  //   this.count--;
+  // }
+
+  // //OR
+  // counter(type:string){
+   
+  //   type==='add' ? this.count++:this.count--
+  // }
+
+
+  //LEC 14
+  
 }
